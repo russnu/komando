@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.russel.komando.uicontroller.TaskTableController">
+    <TableView styleClass="table" fx:id="tableView" >
+        <columns>
+<!--            <TableColumn fx:id="idColumn" text="ID" />-->
+            <TableColumn fx:id="titleColumn" text="Title" />
+            <TableColumn fx:id="descColumn" text="Description" />
+            <TableColumn fx:id="statusColumn" text="Status" />
+            <TableColumn fx:id="priorityColumn" text="Priority" />
+            <TableColumn fx:id="dueColumn" text="Due Date" />
+            <TableColumn fx:id="projectColumn" text="Project" />
+            <TableColumn fx:id="assignedEmployeeColumn" text="Assigned To" />
+        </columns>
+    </TableView>
+</VBox>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.russel.komando.uicontroller.ProjectTableController">
+    <TableView styleClass="table" fx:id="tableView">
+        <columns>
+<!--            <TableColumn fx:id="idColumn" text="ID"/>-->
+            <TableColumn fx:id="nameColumn" text="Project Name"/>
+            <TableColumn fx:id="statusColumn" text="Status"/>
+            <TableColumn fx:id="startDateColumn" text="Start Date"/>
+            <TableColumn fx:id="endDateColumn" text="End Date"/>
+        </columns>
+    </TableView>
+</VBox>

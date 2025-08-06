@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<StackPane id="rootPane" xmlns:fx="http://javafx.com/fxml" alignment="CENTER">
+    <VBox>
+        <ImageView id="splashImage" fitWidth="600" preserveRatio="true">
+            <image>
+                <Image url="@../images/komando_splash.png" />
+            </image>
+        </ImageView>
+    </VBox>
+</StackPane>
+

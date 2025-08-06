@@ -1,0 +1,45 @@
+.dialog-pane {
+    -fx-border-width: 2px;
+    -fx-padding: 20px;
+    -fx-font-family: "Poppins";
+}
+
+.dialog-pane .header-panel {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+
+}
+
+.dialog-pane .content.label {
+    -fx-font-size: 16px;
+}
+
+.dialog-pane .button-bar .button {
+
+    -fx-font-size: 14px;
+    -fx-background-radius: 8;
+    -fx-padding: 8 20;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 4, 0, 0, 4);
+}
+
+.dialog-pane .button-bar .button:hover {
+    -fx-effect: none;
+}
+
+.delete-button {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: #F44336;
+}
+.delete-button:hover {
+     -fx-background-color: #D32F2F;
+}
+
+.cancel-button {
+    -fx-background-color: #D5D9DC;
+    -fx-text-fill: black;
+    -fx-font-weight: normal;
+}
+.cancel-button:hover {
+     -fx-background-color: #bdc3c7;
+}

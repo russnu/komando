@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      spacing="10"
+      fx:controller="com.russel.komando.uicontroller.ProjectController">
+    <HBox>
+        <Label styleClass="page-title" text="Projects" />
+        <Region HBox.hgrow="ALWAYS" />
+        <Button fx:id="createProjectButton" onAction="#handleCreateProject" id="button">
+            <graphic>
+                <ImageView fitHeight="20" fitWidth="20">
+                    <image>
+                        <Image url="@../icons/plus-icon.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <text>New Project</text>
+        </Button>
+    </HBox>
+
+    <fx:include source="tables/ProjectTable.fxml" fx:id="projectTableInclude"/>
+</VBox>

@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql1
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: komando_db
+      MYSQL_USER: mysqluser
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./komando_db.sql:/docker-entrypoint-initdb.d/komando_db.sql
+    networks:
+      - komandonetwork
+
+  springboot-app:
+    image: komandosb
+    container_name: komandosrvr
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/komando_db
+      SPRING_DATASOURCE_USERNAME: mysqluser
+      SPRING_DATASOURCE_PASSWORD: password
+    depends_on:
+      - mysql
+    networks:
+      - komandonetwork
+
+volumes:
+  mysql_data:
+
+networks:
+  komandonetwork:
+    driver: bridge

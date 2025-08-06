@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<VBox spacing="10" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.russel.komando.uicontroller.EmployeeDetailsController"
+      styleClass="page-root">
+
+    <VBox styleClass="page-header" spacing="0">
+        <Label styleClass="page-title" fx:id="employeeNameLabel" />
+        <Label styleClass="page-subtitle" fx:id="employeeTitleLabel" />
+    </VBox>
+
+    <VBox styleClass="section">
+        <HBox styleClass="section-header" alignment="BOTTOM_CENTER">
+            <Label styleClass="section-title" text="Employee Tasks" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="assignTaskButton" id="button" onAction="#handleAssignToExistingTask">
+                <graphic>
+                    <ImageView fitHeight="20" fitWidth="20">
+                        <image>
+                            <Image url="@../icons/task-icon.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+                <text>Assign to Task</text>
+            </Button >
+        </HBox>
+        <fx:include fx:id="taskTableInclude" source="tables/TaskTable.fxml"/>
+    </VBox>
+
+    <VBox styleClass="section">
+        <HBox styleClass="section-header" alignment="BOTTOM_CENTER">
+            <Label styleClass="section-title" text="Employee Projects" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="assignProjectButton" id="button" onAction="#handleAssignToExistingProject">
+                <graphic>
+                    <ImageView fitHeight="20" fitWidth="20">
+                        <image>
+                            <Image url="@../icons/project-icon.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+                <text>Assign to Project</text>
+            </Button>
+        </HBox>
+        <fx:include fx:id="projectTableInclude" source="tables/ProjectTable.fxml"/>
+    </VBox>
+
+
+
+
+
+
+</VBox>

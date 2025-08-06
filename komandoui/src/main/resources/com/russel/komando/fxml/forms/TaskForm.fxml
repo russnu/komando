@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.russel.komando.formcontroller.TaskFormController"
+      alignment="CENTER"
+      stylesheets="@../../css/form.css"
+      styleClass="root">
+    <Label fx:id="titleText" styleClass="form-title" />
+    <!--=====================================================================================-->
+    <VBox styleClass="form-item">
+        <Label styleClass="field-label" text="Task Name" />
+        <TextField fx:id="taskNameField" promptText="Task Name" />
+    </VBox>
+    <!--=====================================================================================-->
+    <VBox styleClass="form-item">
+        <Label styleClass="field-label" text="Description" />
+        <TextArea fx:id="descriptionField" promptText="Description" />
+    </VBox>
+    <!--=====================================================================================-->
+    <HBox styleClass="form-row">
+        <VBox styleClass="form-column">
+            <VBox styleClass="form-item">
+                <Label styleClass="field-label" text="Due Date" />
+                <DatePicker fx:id="dueDatePicker" />
+            </VBox>
+            <VBox styleClass="form-item">
+                <Label styleClass="field-label" text="Status" />
+                <ComboBox fx:id="statusComboBox" promptText="Select or enter a status" editable="true" />
+            </VBox>
+            <VBox styleClass="form-item">
+                <Label styleClass="field-label" text="Priority" />
+                <ComboBox fx:id="priorityComboBox" promptText="Select Priority" editable="true" />
+            </VBox>
+        </VBox>
+        <!--=====================================================================================-->
+        <VBox styleClass="form-column">
+            <VBox styleClass="form-item">
+                <Label styleClass="field-label" text="Assign Employees" />
+                <ListView fx:id="employeeListView" />
+            </VBox>
+        </VBox>
+    </HBox>
+    <!--=====================================================================================-->
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Save" id="form-button" styleClass="save-button" onAction="#handleSave" />
+        <Button text="Cancel" id="form-button" styleClass="cancel-button" onAction="#handleCancel" />
+    </HBox>
+</VBox>

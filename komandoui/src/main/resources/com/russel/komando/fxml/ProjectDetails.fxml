@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.TextFlow?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.russel.komando.uicontroller.ProjectDetailsController"
+      stylesheets="@../css/form.css"
+      styleClass="page-root">
+    <VBox styleClass="page-header">
+        <Label styleClass="page-title" fx:id="projectNameLabel" />
+        <HBox spacing="50">
+            <TextFlow fx:id="statusTextFlow"/>
+            <TextFlow fx:id="dueDateTextFlow" />
+        </HBox>
+    </VBox>
+
+    <VBox styleClass="section">
+        <HBox styleClass="section-header" alignment="BOTTOM_CENTER">
+            <Label styleClass="section-title" text="Project Tasks" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="createTaskButton" onAction="#handleCreate" id="button">
+                <graphic>
+                    <ImageView fitHeight="20" fitWidth="20">
+                        <image>
+                            <Image url="@../icons/plus-icon.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+                <text>New Task</text>
+            </Button>
+        </HBox>
+
+        <fx:include fx:id="taskTableInclude" source="tables/TaskTable.fxml"/>
+    </VBox>
+
+    <VBox styleClass="section">
+        <HBox styleClass="section-header" alignment="BOTTOM_CENTER">
+            <Label styleClass="section-title" text="Project Members" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="addMembersButton" onAction="#handleAddMembers" id="button">
+                <graphic>
+                    <ImageView fitHeight="20" fitWidth="20">
+                        <image>
+                            <Image url="@../icons/plus-icon.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+                <text>Add Members</text>
+            </Button>
+        </HBox>
+
+        <fx:include fx:id="employeeTableInclude" source="tables/EmployeeTable.fxml"/>
+    </VBox>
+
+
+
+</VBox>

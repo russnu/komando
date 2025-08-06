@@ -1,0 +1,81 @@
+.root {
+    -fx-padding: 20;
+    -fx-spacing: 20;
+    -fx-font-family: "Poppins";
+}
+
+.form-title{
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+
+.form-row {
+    -fx-spacing: 20;
+    -fx-alignment: center;
+}
+
+.form-column {
+    -fx-spacing: 10;
+    -fx-alignment: top-center;
+}
+
+.form-item{
+    -fx-spacing: 2;
+}
+
+.field-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+#form-button{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 8 20;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 4, 0, 0, 4);
+}
+
+.save-button {
+    -fx-background-color: #4CAF50;
+}
+
+.cancel-button {
+    -fx-background-color: #F44336;
+}
+
+
+#form-button:hover {
+    -fx-effect: none;
+}
+
+.save-button:hover {
+     -fx-background-color: #45A049;
+}
+
+.cancel-button:hover {
+     -fx-background-color: #D32F2F;
+}
+
+
+.list-view {
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5;
+    -fx-max-height: 200;
+}
+
+.list-cell {
+    -fx-padding: 5;
+    -fx-font-size: 12px;
+    -fx-text-fill: #333;
+    -fx-background-color: transparent;
+}
+
+.solo-list-view {
+    -fx-max-height: 400;
+    -fx-min-width: 300
+}
+

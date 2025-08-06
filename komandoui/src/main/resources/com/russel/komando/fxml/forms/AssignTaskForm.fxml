@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.russel.komando.formcontroller.AssignTaskFormController"
+            stylesheets="@../../css/form.css"
+            styleClass="root">
+    <Label text="Assign Employee to Existing Task" styleClass="form-title" />
+    <!--=====================================================================================-->
+    <VBox styleClass="form-column">
+        <VBox styleClass="form-item">
+            <Label styleClass="field-label" text="Select Task/s" />
+            <ListView fx:id="taskListView" styleClass="solo-list-view"/>
+        </VBox>
+    </VBox>
+    <!--=====================================================================================-->
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Save" id="form-button" styleClass="save-button" onAction="#handleSave" />
+        <Button text="Cancel" id="form-button" styleClass="cancel-button" onAction="#handleCancel" />
+    </HBox>
+
+</VBox>

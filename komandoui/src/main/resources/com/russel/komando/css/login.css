@@ -1,0 +1,26 @@
+#loginScene{
+    -fx-background-color: #2D597D;
+}
+
+.text-field{
+    -fx-border-style: solid;
+    -fx-border-width: 3;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: #2D597D;
+}
+
+.label{
+    -fx-font-family: "Poppins";
+    -fx-font-weight: 900;
+    -fx-font-size: 20;
+    -fx-alignment: center;
+}
+
+#loginContainer{
+    -fx-background-color: #CACACA;
+    -fx-background-radius: 16;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 4, 0, 0, 4);
+}
+

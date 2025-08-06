@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      spacing="10"
+      fx:controller="com.russel.komando.uicontroller.TaskController">
+
+    <Label styleClass="page-title" text="Tasks" />
+    <fx:include source="tables/TaskTable.fxml" fx:id="taskTableInclude"/>
+
+</VBox>
+

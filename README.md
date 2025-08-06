@@ -1,4 +1,7 @@
-<h1 align="center" style="border: none; border-bottom: none; padding-bottom: 0; margin-bottom: 0;">Komando</h1>  
+<div align="center">
+<p align="center" style="font-size: 3em; font-weight: bold; margin-bottom: 0;">Komando</p> 
+</div>
+
 <p align="center"><b><i>Task Management Application</i></b></p>
 <p align="center">
   A modular and simple Java application for managing tasks using <code>Maven</code>, <code>JavaFX</code> (frontend), and <code>Spring Boot</code> (backend).
@@ -14,7 +17,8 @@
 
 <div align="center">
 
-<h2>🧰 Tech Stack</h2>
+[//]: # (<h2>🧰 Tech Stack</h2>)
+<p align="center" style="font-size: 2em; font-weight: bold; margin-bottom: 0;">🧰 Tech Stack</p> 
 <p>☕ Java 21+</p>
 <p>🛠️ Maven</p>
 <p>🖼️ JavaFX (Frontend UI)</p>
